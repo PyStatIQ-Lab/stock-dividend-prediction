@@ -166,7 +166,7 @@ st.markdown(f"""
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 15px;
+            width: 35px;
             padding-top: 30px;
         }}
     </style>
