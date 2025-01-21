@@ -161,5 +161,5 @@ st.markdown("""
         }
     </style>
     st.title('Stock Dividend Prediction and Financial Analysis')
-   st.title('Stock Dividend Prediction and Financial Analysis') <img class="footer-logo" src="https://predictram.com/images/logo.png" alt="Footer Logo">
+  <img class="footer-logo" src="https://predictram.com/images/logo.png" alt="Footer Logo">
 """, unsafe_allow_html=True)
