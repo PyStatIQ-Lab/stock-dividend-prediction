@@ -160,14 +160,7 @@ st.markdown("""
             
         }
     </style>
-st.markdown("""
-    This application predicts stock dividends and offers financial analysis. 
-    For detailed instructions and installation steps, 
-    visit the [README file](https://github.com/yourusername/stock-dividend-prediction/blob/main/README.md).
-""")
-
-
-    
+  
    <div style="display: flex; align-items: center; justify-content: center;">
         <img class="footer-logo" src="https://predictram.com/images/logo.png" alt="Footer Logo" style="height: 80px;">
         <p style="margin-right: 10px;">Developed By PredictRAM</p>
