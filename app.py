@@ -160,9 +160,14 @@ st.markdown("""
             
         }
     </style>
-          <p>This is the text before the image</p>
    <div style="display: flex; align-items: center; justify-content: center;">
-           <p>This is the text before the imagesssss</p>
+           <p>App Code: Stock-Dividend-Prediction-Jan-2025</p>
+           <p>To get access of stocks file to upload. Please Email us at support@pystatiq.com.</p>
+           <p>Dont forget to add the Application code.</p>
+           <p> README - https://predictram.com</p>
+        <p>This is the text before the image</p>
+
+           
         <img class="footer-logo" src="https://predictram.com/images/logo.png" alt="Footer Logo" style="height: 80px;">
         <p style="margin-right: 10px;">Developed By PredictRAM</p>
     </div>
