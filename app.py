@@ -104,19 +104,24 @@ def save_to_excel(results, filename="dividend_predictions.xlsx"):
 # Streamlit App
 st.set_page_config(page_title="Stock Dividend Prediction", layout="wide")
 
+# Header Logo Adjustment
+header_logo_width = st.slider("Adjust Header Logo Width", min_value=100, max_value=600, value=300, step=50)
+header_logo_url = "https://your-logo-url-here.com/logo.png"
+
 # Display Header Logo
-st.markdown("""
+st.markdown(f"""
     <style>
-        .header-logo {
+        .header-logo {{
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 50%;
-        }
+            width: {header_logo_width}px;
+        }}
     </style>
-    <img class="header-logo" src="https://pystatiq.com/images/pystatIQ_logo.png" alt="Header Logo">
+    <img class="header-logo" src="{header_logo_url}" alt="Header Logo">
 """, unsafe_allow_html=True)
 
+# Title and Introduction
 st.title('Stock Dividend Prediction and Financial Analysis')
 
 # File uploader to upload an Excel file containing stock symbols
@@ -148,26 +153,30 @@ if uploaded_file is not None:
                 if st.button('Save Results to Excel'):
                     save_to_excel(all_results)
 
-# Display Footer Logo
+# Footer Content and Logo Adjustment
+footer_logo_width = st.slider("Adjust Footer Logo Width", min_value=100, max_value=600, value=300, step=50)
+footer_logo_url = "https://your-footer-logo-url-here.com/footer-logo.png"
+
+# Content before the footer logo
 st.markdown("""
+    <div style="text-align: center; font-size: 14px; margin-top: 30px;">
+        <p><strong>App Code:</strong> Stock-Dividend-Prediction-Jan-2025</p>
+        <p>To get access to the stocks file to upload, please Email us at <a href="mailto:support@pystatiq.com">support@pystatiq.com</a>.</p>
+        <p>Don't forget to add the Application code.</p>
+        <p><strong>README:</strong> <a href="https://predictram.com" target="_blank">https://predictram.com</a></p>
+    </div>
+""", unsafe_allow_html=True)
+
+# Display Footer Logo
+st.markdown(f"""
     <style>
-        .footer-logo {
+        .footer-logo {{
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 10%;
+            width: {footer_logo_width}px;
             padding-top: 30px;
-            
-        }
+        }}
     </style>
-        <img class="footer-logo" src="https://predictram.com/images/logo.png" alt="Footer Logo">
-    
-   <div style="display: flex; align-items: center; justify-content: center;">
-           <p>App Code: Stock-Dividend-Prediction-Jan-2025</p>
-            </div>
-            <div><p>To get access of stocks file to upload. Please Email us at support@pystatiq.com.</p>
-            </div>
-           <p>Dont forget to add the Application code.</p>
-           <p> README - https://predictram.com</p>
-        <p>This is the text before the image</p>
- </div>
+    <img class="footer-logo" src="{footer_logo_url}" alt="Footer Logo">
+""", unsafe_allow_html=True)
