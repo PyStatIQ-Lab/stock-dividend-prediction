@@ -104,9 +104,9 @@ def save_to_excel(results, filename="dividend_predictions.xlsx"):
 # Streamlit App
 st.set_page_config(page_title="Stock Dividend Prediction", layout="wide")
 
-# Header Logo Adjustment
-header_logo_width = st.slider("Adjust Header Logo Width", min_value=100, max_value=600, value=300, step=50)
+# Fixed Header Logo (no slider)
 header_logo_url = "https://your-logo-url-here.com/logo.png"
+header_logo_width = 300  # Fixed width
 
 # Display Header Logo
 st.markdown(f"""
@@ -153,9 +153,9 @@ if uploaded_file is not None:
                 if st.button('Save Results to Excel'):
                     save_to_excel(all_results)
 
-# Footer Content and Logo Adjustment
-footer_logo_width = st.slider("Adjust Footer Logo Width", min_value=100, max_value=600, value=300, step=50)
+# Fixed Footer Content and Logo (no slider)
 footer_logo_url = "https://your-footer-logo-url-here.com/footer-logo.png"
+footer_logo_width = 300  # Fixed width for footer logo
 
 # Content before the footer logo
 st.markdown("""
