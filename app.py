@@ -102,6 +102,21 @@ def save_to_excel(results, filename="dividend_predictions.xlsx"):
         st.error(f"Error saving to Excel: {e}")
 
 # Streamlit App
+st.set_page_config(page_title="Stock Dividend Prediction", layout="wide")
+
+# Display Header Logo
+st.markdown("""
+    <style>
+        .header-logo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    </style>
+    <img class="header-logo" src="https://your-logo-url-here.com/logo.png" alt="Header Logo">
+""", unsafe_allow_html=True)
+
 st.title('Stock Dividend Prediction and Financial Analysis')
 
 # File uploader to upload an Excel file containing stock symbols
@@ -132,6 +147,17 @@ if uploaded_file is not None:
                 # Button to save the results to Excel
                 if st.button('Save Results to Excel'):
                     save_to_excel(all_results)
-            else:
-                st.warning("No valid results fetched.")
 
+# Display Footer Logo
+st.markdown("""
+    <style>
+        .footer-logo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            padding-top: 30px;
+        }
+    </style>
+    <img class="footer-logo" src="https://your-footer-logo-url-here.com/footer-logo.png" alt="Footer Logo">
+""", unsafe_allow_html=True)
