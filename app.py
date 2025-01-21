@@ -170,7 +170,9 @@ st.markdown("""
         <p>This is the text before the image</p>
  </div>
            
-        <img class="footer-logo" src="https://predictram.com/images/logo.png" alt="Footer Logo" style="height: 80px;">
-        <p style="margin-right: 10px;">Developed By PredictRAM</p>
+        <div style="text-align: center;">
+        <p>This is the text before the image</p>
+        <img class="footer-logo" src="https://predictram.com/images/logo.png" alt="Footer Logo">
     </div>
+
 """, unsafe_allow_html=True)
