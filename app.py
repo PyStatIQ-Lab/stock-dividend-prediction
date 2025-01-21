@@ -104,24 +104,19 @@ def save_to_excel(results, filename="dividend_predictions.xlsx"):
 # Streamlit App
 st.set_page_config(page_title="Stock Dividend Prediction", layout="wide")
 
-# Header Logo Adjustment
-header_logo_width = st.slider("Adjust Header Logo Width", min_value=100, max_value=600, value=300, step=50)
-header_logo_url = "https://pystatiq.com/images/pystatIQ_logo.png"
-
 # Display Header Logo
-st.markdown(f"""
+st.markdown("""
     <style>
-        .header-logo {{
+        .header-logo {
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 25px;
-        }}
+            width: 50%;
+        }
     </style>
-    <img class="header-logo" src="{header_logo_url}" alt="Header Logo">
+    <img class="header-logo" src="https://pystatiq.com/images/pystatIQ_logo.png" alt="Header Logo">
 """, unsafe_allow_html=True)
 
-# Title and Introduction
 st.title('Stock Dividend Prediction and Financial Analysis')
 
 # File uploader to upload an Excel file containing stock symbols
@@ -153,20 +148,17 @@ if uploaded_file is not None:
                 if st.button('Save Results to Excel'):
                     save_to_excel(all_results)
 
-# Footer Logo Adjustment
-footer_logo_width = st.slider("Adjust Footer Logo Width", min_value=100, max_value=600, value=300, step=50)
-footer_logo_url = "https://your-footer-logo-url-here.com/footer-logo.png"
-
 # Display Footer Logo
-st.markdown(f"""
+st.markdown("""
     <style>
-        .footer-logo {{
+        .footer-logo {
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 15px;
+            width: 10%;
             padding-top: 30px;
-        }}
+            
+        }
     </style>
     <img class="footer-logo" src="https://predictram.com/images/logo.png" alt="Footer Logo">
 """, unsafe_allow_html=True)
