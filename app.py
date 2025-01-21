@@ -162,6 +162,7 @@ st.markdown("""
     </style>
           <p>This is the text before the image</p>
    <div style="display: flex; align-items: center; justify-content: center;">
+           <p>This is the text before the imagesssss</p>
         <img class="footer-logo" src="https://predictram.com/images/logo.png" alt="Footer Logo" style="height: 80px;">
         <p style="margin-right: 10px;">Developed By PredictRAM</p>
     </div>
