@@ -155,7 +155,7 @@ st.markdown("""
         <p><strong>App Code:</strong> Stock-Dividend-Prediction-Jan-2025</p>
         <p>To get access to the stocks file to upload, please Email us at <a href="mailto:support@pystatiq.com">support@pystatiq.com</a>.</p>
         <p>Don't forget to add the Application code.</p>
-        <p><strong>README:</strong> <a href="https://predictram.com" target="_blank">https://predictram.com</a></p>
+        <p><strong>README:</strong> <a href="https://pystatiq-lab.gitbook.io/docs/python-apps/stock-dividend-predictions" target="_blank">https://pystatiq-lab.gitbook.io/docs/python-apps/stock-dividend-predictions</a></p>
     </div>
 """, unsafe_allow_html=True)
 
