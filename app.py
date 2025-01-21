@@ -166,7 +166,7 @@ st.markdown("""
            <p>Dont forget to add the Application code.</p>
            <p> README - https://predictram.com</p>
         <p>This is the text before the image</p>
-
+ </div>
            
         <img class="footer-logo" src="https://predictram.com/images/logo.png" alt="Footer Logo" style="height: 80px;">
         <p style="margin-right: 10px;">Developed By PredictRAM</p>
