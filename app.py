@@ -104,24 +104,19 @@ def save_to_excel(results, filename="dividend_predictions.xlsx"):
 # Streamlit App
 st.set_page_config(page_title="Stock Dividend Prediction", layout="wide")
 
-# Fixed Header Logo (no slider)
-header_logo_url = "https://your-logo-url-here.com/logo.png"
-header_logo_width = 300  # Fixed width
-
 # Display Header Logo
-st.markdown(f"""
+st.markdown("""
     <style>
-        .header-logo {{
+        .header-logo {
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: {header_logo_width}px;
-        }}
+            width: 50%;
+        }
     </style>
     <img class="header-logo" src="https://pystatiq.com/images/pystatIQ_logo.png" alt="Header Logo">
 """, unsafe_allow_html=True)
 
-# Title and Introduction
 st.title('Stock Dividend Prediction and Financial Analysis')
 
 # File uploader to upload an Excel file containing stock symbols
@@ -153,30 +148,16 @@ if uploaded_file is not None:
                 if st.button('Save Results to Excel'):
                     save_to_excel(all_results)
 
-# Fixed Footer Content and Logo (no slider)
-footer_logo_url = "https://your-footer-logo-url-here.com/footer-logo.png"
-footer_logo_width = 300  # Fixed width for footer logo
-
-# Content before the footer logo
-st.markdown("""
-    <div style="text-align: center; font-size: 14px; margin-top: 30px;">
-        <p><strong>App Code:</strong> Stock-Dividend-Prediction-Jan-2025</p>
-        <p>To get access to the stocks file to upload, please Email us at <a href="mailto:support@pystatiq.com">support@pystatiq.com</a>.</p>
-        <p>Don't forget to add the Application code.</p>
-        <p><strong>README:</strong> <a href="https://predictram.com" target="_blank">https://predictram.com</a></p>
-    </div>
-""", unsafe_allow_html=True)
-
 # Display Footer Logo
-st.markdown(f"""
+st.markdown("""
     <style>
-        .footer-logo {{
+        .footer-logo {
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: {footer_logo_width}px;
+            width: 50%;
             padding-top: 30px;
-        }}
+        }
     </style>
-    <img class="footer-logo" src="{footer_logo_url}" alt="Footer Logo">
+    <img class="footer-logo" src="https://predictram.com/images/logo.png" alt="Footer Logo">
 """, unsafe_allow_html=True)
