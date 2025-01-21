@@ -102,7 +102,7 @@ def save_to_excel(results, filename="dividend_predictions.xlsx"):
         st.error(f"Error saving to Excel: {e}")
 
 # Streamlit App
-st.set_page_config(page_title="Stock Dividend Prediction", layout="wide")
+st.set_page_config(page_title="PyStatIQ Stock Dividend Prediction", layout="wide")
 
 # Display Header Logo
 st.markdown("""
@@ -114,7 +114,7 @@ st.markdown("""
             width: 50%;
         }
     </style>
-    <img class="header-logo" src="https://your-logo-url-here.com/logo.png" alt="Header Logo">
+    <img class="header-logo" src="https://pystatiq.com/images/pystatIQ_logo.png" alt="Header Logo">
 """, unsafe_allow_html=True)
 
 st.title('Stock Dividend Prediction and Financial Analysis')
@@ -159,5 +159,5 @@ st.markdown("""
             padding-top: 30px;
         }
     </style>
-    <img class="footer-logo" src="https://your-footer-logo-url-here.com/footer-logo.png" alt="Footer Logo">
+    <img class="footer-logo" src="https://predictram.com/images/logo.png" alt="Footer Logo">
 """, unsafe_allow_html=True)
