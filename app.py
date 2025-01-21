@@ -149,15 +149,26 @@ if uploaded_file is not None:
                     save_to_excel(all_results)
 
 # Display Footer Logo
+# Content before the footer logo
 st.markdown("""
+    <div style="text-align: center; font-size: 14px; margin-top: 30px;">
+        <p><strong>App Code:</strong> Stock-Dividend-Prediction-Jan-2025</p>
+        <p>To get access to the stocks file to upload, please Email us at <a href="mailto:support@pystatiq.com">support@pystatiq.com</a>.</p>
+        <p>Don't forget to add the Application code.</p>
+        <p><strong>README:</strong> <a href="https://predictram.com" target="_blank">https://predictram.com</a></p>
+    </div>
+""", unsafe_allow_html=True)
+
+# Display Footer Logo
+st.markdown(f"""
     <style>
-        .footer-logo {
+        .footer-logo {{
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 15%;
+            width: {footer_logo_width}px;
             padding-top: 30px;
-        }
+        }}
     </style>
-    <img class="footer-logo" src="https://predictram.com/images/logo.png" alt="Footer Logo">
+    <img class="footer-logo" src="{footer_logo_url}" alt="Footer Logo">
 """, unsafe_allow_html=True)
