@@ -111,7 +111,7 @@ st.markdown("""
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 50%;
+            width: 25%;
         }
     </style>
     <img class="header-logo" src="https://pystatiq.com/images/pystatIQ_logo.png" alt="Header Logo">
@@ -155,7 +155,7 @@ st.markdown("""
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 50%;
+            width: 15%;
             padding-top: 30px;
         }
     </style>
