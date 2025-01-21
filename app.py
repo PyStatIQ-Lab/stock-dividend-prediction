@@ -162,7 +162,9 @@ st.markdown("""
     </style>
    <div style="display: flex; align-items: center; justify-content: center;">
            <p>App Code: Stock-Dividend-Prediction-Jan-2025</p>
-           <p>To get access of stocks file to upload. Please Email us at support@pystatiq.com.</p>
+            </div>
+            <div><p>To get access of stocks file to upload. Please Email us at support@pystatiq.com.</p>
+            </div>
            <p>Dont forget to add the Application code.</p>
            <p> README - https://predictram.com</p>
         <p>This is the text before the image</p>
