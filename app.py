@@ -118,7 +118,7 @@ st.markdown(f"""
             width: {header_logo_width}px;
         }}
     </style>
-    <img class="header-logo" src="{header_logo_url}" alt="Header Logo">
+    <img class="header-logo" src="https://pystatiq.com/images/pystatIQ_logo.png" alt="Header Logo">
 """, unsafe_allow_html=True)
 
 # Title and Introduction
