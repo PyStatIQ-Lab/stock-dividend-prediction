@@ -166,9 +166,9 @@ st.markdown(f"""
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: {footer_logo_width}px;
+            width: 15px;
             padding-top: 30px;
         }}
     </style>
-    <img class="footer-logo" src="{footer_logo_url}" alt="Footer Logo">
+    <img class="footer-logo" src="https://predictram.com/images/logo.png" alt="Footer Logo">
 """, unsafe_allow_html=True)
