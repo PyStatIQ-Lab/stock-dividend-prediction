@@ -162,7 +162,7 @@ st.markdown("""
     </style>
    <div style="display: flex; align-items: center; justify-content: center;">
         <p style="margin-right: 10px;">This is the text beside the image</p>
-        <img class="footer-logo" src="https://predictram.com/images/logo.png" alt="Footer Logo" style="height: 50px;">
+        <img class="footer-logo" src="https://predictram.com/images/logo.png" alt="Footer Logo" style="height: 80px;">
         <p style="margin-right: 10px;">This is the text beside the image</p>
     </div>
 """, unsafe_allow_html=True)
