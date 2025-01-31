@@ -134,10 +134,14 @@ if uploaded_file is not None:
     if 'Symbol' not in symbols_df.columns:
         st.error("The uploaded file must contain a 'Symbol' column with stock tickers.")
     else:
+        # Let the user select stocks from the uploaded file
+        stock_options = symbols_df['Symbol'].tolist()
+        selected_stocks = st.multiselect("Select Stock Symbols", stock_options)
+
         # Button to start the data fetching process
-        if st.button('Fetch Financial Data'):
+        if st.button('Fetch Financial Data') and selected_stocks:
             all_results = []
-            for ticker in symbols_df['Symbol']:  # Assuming 'Symbol' column contains the stock tickers
+            for ticker in selected_stocks:  # Use selected stocks
                 st.write(f"Processing {ticker}...")
                 result = get_financial_data(ticker)
                 if result is not None:
