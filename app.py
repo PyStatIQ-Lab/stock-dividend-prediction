@@ -4,6 +4,9 @@ import os
 from openpyxl import load_workbook
 import streamlit as st
 
+# Path to the stocks.xlsx file
+STOCKS_FILE_PATH = 'stocks.xlsx'  # Change this to the correct path if needed
+
 # Function to fetch data for a given stock ticker
 def get_financial_data(ticker):
     stock = yf.Ticker(ticker)
@@ -123,18 +126,15 @@ st.markdown("""
 
 st.title('Stock Dividend Prediction and Financial Analysis')
 
-# File uploader to upload an Excel file containing stock symbols
-uploaded_file = st.file_uploader("Upload Excel file with stock symbols", type=['xlsx'])
-
-if uploaded_file is not None:
-    # Load the uploaded file into a DataFrame
-    symbols_df = pd.read_excel(uploaded_file)
+# Read the stock symbols from the local stocks.xlsx file
+if os.path.exists(STOCKS_FILE_PATH):
+    symbols_df = pd.read_excel(STOCKS_FILE_PATH)
 
     # Check if the 'Symbol' column exists
     if 'Symbol' not in symbols_df.columns:
-        st.error("The uploaded file must contain a 'Symbol' column with stock tickers.")
+        st.error("The file must contain a 'Symbol' column with stock tickers.")
     else:
-        # Let the user select stocks from the uploaded file
+        # Let the user select stocks from the file
         stock_options = symbols_df['Symbol'].tolist()
         selected_stocks = st.multiselect("Select Stock Symbols", stock_options)
 
@@ -155,6 +155,9 @@ if uploaded_file is not None:
                 # Button to save the results to Excel
                 if st.button('Save Results to Excel'):
                     save_to_excel(all_results)
+
+else:
+    st.error(f"{STOCKS_FILE_PATH} not found. Please ensure the file exists.")
 
 # Display Footer Logo
 # Content before the footer logo
