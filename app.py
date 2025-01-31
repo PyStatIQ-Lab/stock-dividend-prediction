@@ -113,6 +113,10 @@ st.markdown("""
             margin-right: auto;
             width: 25%;
         }
+        /* Hiding GitHub Logo */
+        .github-logo {
+            display: none !important;
+        }
     </style>
     <img class="header-logo" src="https://pystatiq.com/images/pystatIQ_logo.png" alt="Header Logo">
 """, unsafe_allow_html=True)
