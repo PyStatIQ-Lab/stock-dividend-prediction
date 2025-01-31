@@ -116,8 +116,14 @@ st.markdown("""
             margin-right: auto;
             width: 25%;
         }
-        /* Hiding GitHub Logo */
-        .github-logo {
+        /* Hide GitHub icons and fork button */
+        .css-1v0mbdj { 
+            display: none !important;
+        }
+        .css-1b22hs3 {
+            display: none !important;
+        }
+        .footer-logo {
             display: none !important;
         }
     </style>
