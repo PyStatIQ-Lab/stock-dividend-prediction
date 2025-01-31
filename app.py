@@ -123,7 +123,12 @@ st.markdown("""
         .css-1b22hs3 {
             display: none !important;
         }
-        .footer-logo {
+        /* Hide Streamlit footer elements */
+        footer { 
+            display: none !important; 
+        }
+        /* Hide the GitHub repository button */
+        .css-1r6ntm8 { 
             display: none !important;
         }
     </style>
