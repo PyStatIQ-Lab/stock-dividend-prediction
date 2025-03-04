@@ -105,7 +105,7 @@ def save_to_excel(results, filename="dividend_predictions.xlsx"):
         st.error(f"Error saving to Excel: {e}")
 
 # Streamlit App
-st.set_page_config(page_title="Stock Dividend Predictionss", layout="wide")
+st.set_page_config(page_title="Stock Dividend Predictions", layout="wide")
 
 # Display Header Logo
 st.markdown("""
